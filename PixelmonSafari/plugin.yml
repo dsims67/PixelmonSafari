@@ -1,0 +1,46 @@
+name: SafariPlugin
+main: savior67.safariplugin.SafariPlugin
+version: 0.1
+permissions:
+   SafariPlugin.reset:
+      description: Allows access to the /resetsafari command
+   SafariPlugin.lobby:
+      description: Allows access to the /lobby <player> command
+   SafariPlugin.setlobby:
+      description: Allows access to the /setlobby command
+   SafariPlugin.exempt:
+      description: Player will not be included in safari activities
+   SafariPlugin.biome:
+      description: Allows access to the /biome command
+   SafariPlugin.masterball:
+      description: Gives player an extra masterball on capture phase start
+   SafariPlugin.extraCandies:
+      description: Gives player an 4 rare candies on capture phase start
+   SafariPlugin.ultraballs:
+      description: Gives player an extra 5 ultraballs on capture phase start
+   SafariPlugin.choiceItem:
+      description: Gives player an extra choice item on capture phase start
+   SafariPlugin.starter.*:
+      description: Allows access to /starter command
+commands:
+   setpos:
+      description: Sets the coordinates of the provided Safari Location
+      usage: /setpos
+   lobby:
+      description: Teleports a player to the safari lobby
+      usage: /lobby   
+   resetsafari:
+      description: Returns the safari to the lobby stage
+      usage: /resetsafari
+   timeleft:
+      description: Time remaining in current phase
+      usage: /timeleft
+   safarireload:
+      description: reloads safari plugin config
+      usage: /safarireload
+   stuck:
+      description: teleports player to round start
+      usage: /stuck
+   biome:
+      description: teleports player to a specific biome
+      usage: /biome
